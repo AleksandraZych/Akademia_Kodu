@@ -1,0 +1,14 @@
+"""
+Wyjątki
+Wbudowane wyjątki, na które warto zwrócić uwagę:
+1. OSError - I\O errors -nie znalazłem pliku, nie mogłem się połączyć
+jego podklasy:
+    -ConnectionError
+    -FileExistsError
+    -FileNotFoundError
+    -PermissionError
+    -TimeoutError
+2. TypeError oraz ValueError
+Passing arguments of the wrong type (e.g. passing a list when an int is expected) should result in a TypeError,
+but passing arguments with the wrong value (e.g. a number outside expected boundaries) should result in a ValueError.
+"""
