@@ -1,4 +1,4 @@
-"""
+
 Wyjątki
 Wbudowane wyjątki, na które warto zwrócić uwagę:
 1. OSError - I\O errors -nie znalazłem pliku, nie mogłem się połączyć
@@ -11,4 +11,16 @@ jego podklasy:
 2. TypeError oraz ValueError
 Passing arguments of the wrong type (e.g. passing a list when an int is expected) should result in a TypeError,
 but passing arguments with the wrong value (e.g. a number outside expected boundaries) should result in a ValueError.
-"""
+3. Exception - najważniejszy ogólnie łapie wszystkie wyjątki
+
+Jak łapiemy wyjątki?
+try:
+    blok w którym próbujemy coś zrobić
+except Exception as e:
+    gdy się nie powiedzie program wskoczy tutaj
+    można sobie wyrzucić dany wyjatek np.
+    print("Error: " + e)
+else:
+    gdy to co było w try nie stworzy żadnych błędów program wskoczy tutaj
+finally:
+    ten blok wykona się niezależnie czy powyżej wyskoczy błąd czy nie
